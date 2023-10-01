@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifolio</title>
+    <link rel="stylesheet" th:href="@{/style.css}" />
+</head>
+<body>
+<div class="container">
+    <div class="top">
+        <div class="minha-foto">
+            <img th:src="@{/Daniel neves.jpg}" alt="Minha Foto">
+        </div>
+        <div class="informacao">
+            <h1 th:text="${nome}">Nome</h1>
+
+            <div class="complementos">
+                <label >E-mail:</label>
+                <span th:text="${email}">Neves2590@gmail.com</span>
+                <label >Data de Nascimento:</label>
+                <span th:text="${nascimento}">22/04/2001</span>
+            </div>
+
+            <div class="redes">
+                <a href="${git}" target="_blank">
+                    <img th:src="@{/Github.svg}" alt="">
+                    <p></p>
+                </a>
+                <a href="${linkedin}" target="_blank">
+                    <img th:src="@{/linkedin.svg}" alt="">
+                    <p></p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="section"></div>
+    <div class="line"></div>
+
+    <div class="section">
+        <h2>Cursos</h2>
+            <h2>Orientação a objetos em java</h2>
+        <div class="info">
+            <span th:text="${curso1}"></span>
+        </div>
+        <div class="section">
+            <h2>Curso de estrutura de dados</h2>
+            <div class="info">
+                <span th:text="${curso2}"></span>
+            </div>
+            <div class="section">
+                <h2>Curso protocolos de internet</h2>
+                <div class="info">
+                    <span th:text="${curso3}"></span>
+                </div>
+        <!-- ... Outros cursos ... -->
+
+        <div class="Projetos">
+            <label >Projetos realizados:</label>
+            <span th:text="${projetos}"></span>
+        </div>
+
+        <div class="line"></div>
+    </div>
+            <div class="info">
+                <label >Exeperiencia:</label>
+                <span th:text="${Exeperiencia}"></span>
+            </div>
+
+
+        </div>
+</body>
+</html>

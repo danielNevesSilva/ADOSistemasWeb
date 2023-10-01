@@ -1,0 +1,131 @@
+/* Reset de margens e preenchimentos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais para o corpo do documento */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #494c4E;
+    margin: 0;
+    padding: 20px;
+}
+
+
+.top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+
+.informacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+}
+
+.redes{
+    align items;
+}
+.redes > img{
+    height: 100px;
+    width: 100px;
+}
+
+
+.complementos{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+
+.minha-foto > img{
+    width: 250px;
+    height: 250px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para o container do currículo */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container > h2{
+    text-align: center;
+    align-items: center;
+}
+/* Estilos para os botões */
+.button {
+    display: inline-block;
+    padding: 8px 16px;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 20px;
+
+}
+
+
+
+.line{
+    border: solid 1px black;
+    margin: 50px;
+}
+
+/* Estilos para seções do currículo */
+.section {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos para títulos de seções */
+h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para informações */
+.info {
+    margin-bottom: 10px;
+}
+.info{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.Projetos{
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+}
+
+
+/* Estilos para rótulos (labels) */
+label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* Estilos para links de redes sociais */
+.info a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.info a:hover {
+    text-decoration: underline;
+}
